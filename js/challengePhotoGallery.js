@@ -9,7 +9,7 @@ var gallery = ["sparkstoneChallenge2016.jpg", "first_place.jpg", "second_place.j
     - apples.jpg: http://greatist.com/sites/default/files/styles/fb-1200x630/public/wp-content/uploads/2011/11/Apples.jpg?itok=u4daunae
     */
 var apple_festival = document.getElementById('challengeImage');
-var buttons = document.getElementById("buttons").getElementsByTagName("span"); 
+var buttons = document.getElementById("buttons").getElementsByTagName("span");
 
 /*Event handlers. Perform certain functions when onclick*/
 document.getElementById("next_image").onclick = myNext;
@@ -21,7 +21,7 @@ document.getElementById("4").onclick = myButton;
 
 /*Press next tab to select next image from the gallery*/
 function myNext(){
-    for (var i = 0; i < buttons.length; i++) { 
+    for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].className == "on") {
             buttons[i].className = "";
             break;
