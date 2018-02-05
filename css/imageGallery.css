@@ -1,0 +1,91 @@
+/* image gallery css*/
+
+/* general format of box div containing image gallery*/
+.box {
+    margin: auto;
+    max-width: 90%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2em;
+}
+
+/* format images in gallery*/
+#box > img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* format buttons in gallery*/
+#buttons {
+    position: relative;
+    z-index: 2;
+    width: 20%;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-left: 2.1em;
+}
+
+#buttons > span {
+    cursor: pointer;
+    float: left;
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    margin: 3%;
+}
+
+@media (max-width: 600px) {
+    #buttons {
+        width: 40%;
+    }
+    #buttons >span {
+        width: 8px;
+        height: 8px;
+        margin: 5%;
+    }
+    #challengeImage {
+        width: 80%;
+    }
+}
+
+#buttons .on {
+    background: #F2D454;
+}
+
+/* format tabs in gallery*/
+.tab {
+    width: 6%;
+    cursor: pointer;
+    display: block;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    line-height: 175%;
+    text-decoration: none;
+    top: 50%;
+}
+
+.tab:hover {
+    background: rgba(0,0,0,.7);
+}
+
+#next_image {
+    right: 0px;
+}
+
+#prev_image {
+    left: 0px;
+}
+
+.box:hover .tab {
+    display: block;
+}
